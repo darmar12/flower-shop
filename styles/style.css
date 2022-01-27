@@ -389,7 +389,7 @@ body {
     
 }
 
-.products_list-content{
+.products_list-info{
     padding: 20px;
     text-align: center;
 }
@@ -399,14 +399,14 @@ body {
     color: #333;
 }
 
-.products_list-price{
+.products_list-actual_price{
     font-size: 25px;
     color: #E84390;
     font-weight: bolder;
     padding: 10px 0 0;
 }
 
-.old_price{
+.products_list-old_price{
     font-size: 15px;
     color: #999;
     font-weight: lighter;
