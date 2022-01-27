@@ -255,7 +255,7 @@ body {
     justify-content: center;
 }
 
-.bonuses_list-item{
+.bonuses_box{
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, .1);
     display: flex;
@@ -264,18 +264,18 @@ body {
     flex: 1 1 250px;
 }
 
-.bonuses_list-item img{
+.bonuses_box img{
     height: 50px;
     margin: 0 20px 0;
 }
 
-.list-itemTitle{
+.bonuses_box-title{
     color: #333;
     font-size: 15px;
     padding: 0 0 15px;
     font-weight: 600;
 }
-.list-itemText{
+.bonuses_box-text{
     font-size: 13px;
     color: #555;
 }
