@@ -180,7 +180,7 @@ body {
     color: #333;
     padding: 10px;
     margin: 20px 0;
-    background: rgba(255, 51, 153, .0.5);
+    background: rgba(255, 51, 153, .05);
 }
 
 .about_title-1stword{
@@ -214,7 +214,7 @@ body {
     position: absolute;
     top: 50%;
     text-align: center;
-    transform: translateY(50%);
+    transform: translateY(-50%);
     font-size: 30px;
     background: #fff;
     width: 100%;
@@ -224,6 +224,9 @@ body {
 }
 
 .about_content{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
     flex: 1 1 400px;
 }
 .about_content-title{
@@ -247,7 +250,7 @@ body {
     gap: 15px;
     background-color: #eee;
     flex-wrap: wrap;
-    padding: 50px 0;
+    padding: 25px 0;
     justify-content: center;
 }
 
