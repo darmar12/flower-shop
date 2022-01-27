@@ -38,6 +38,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1000;
     width: 100%;
     background-color: #fff;
     padding: 20px 0;
@@ -245,7 +246,6 @@ body {
 
 }
 
-
 .bonuses{
     display: flex;
     gap: 15px;
@@ -311,14 +311,18 @@ body {
     gap: 15px;
 }
 
-.products_list-item{
+.products_list-item {
     display: flex;
     flex-direction: column;
-    flex: 1 300px;
+    flex: 1 23%;
     box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
     border-radius: 5px;
     border: 1px solid rgba(0,0,0,.1);
     position: relative;
+}
+
+.products_list-item:nth-child(1n + 5) {
+    flex: 1 19%;
 }
 
 .products_list-discount{
@@ -351,11 +355,13 @@ body {
 }
 
 .products_list-item:hover .products_list-icons{
-    transform: translateY(-100%);
+    transform: translateY(0%);
 }
 
 .products_list-icons{
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -364,14 +370,17 @@ body {
     height: 50px;
     transform: translateY(100%);
     transition: all 0.3s linear;
-    justify-content: space-between;
-    padding: 0 30px;
     background-color:#E84390;
 }
 
-.products_list-icon{
+.products_list-icon {
+    cursor: pointer;
+}
+
+.products_list-icon:nth-child(2) {
     border-left: 1px solid #fff;
     border-right: 1px solid #fff;
+    padding: 0 40px;
 }
 
 .products_list-icons a, .products_list-icons img{
@@ -386,7 +395,6 @@ body {
 .products_list-icons img{
     height: 20px;
     width: 20px;
-    
 }
 
 .products_list-info{
